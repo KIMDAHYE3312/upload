@@ -13,6 +13,10 @@ public class Application2 {
          * ------ 출력 결과 --------
          * 청소년
          * */
+        int age=20;
+        String str=(age<=13)?"어린이":(age>13 && age<=19)?"청소년":"성인";
+
+        System.out.println(str);
 
     }
 }

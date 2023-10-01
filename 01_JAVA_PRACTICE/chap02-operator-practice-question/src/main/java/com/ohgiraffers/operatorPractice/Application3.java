@@ -13,6 +13,10 @@ public class Application3 {
          * ---- 출력 결과 ---
          * 남자입니다.
          * */
+        char ch='M';
+
+        String str=(ch=='M')?"남자입니다":"여자입니다";
+        System.out.println(str);
 
     }
 }
