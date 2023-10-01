@@ -13,6 +13,20 @@ public class RandomMaker {
      * -- 출력 --
      * 가위
      * */
+    public static String rockPaperScissors() {
+        String str="";
+        int num=(int)(Math.random()*3+1);
+        if(num==1) {
+            str="가위";
+        }
+        else if(num==2) {
+            str="바위";
+        }
+        else {
+            str="보";
+        }
+        return str;
+    }
 
     /*
      * static 메소드로 생성
@@ -27,4 +41,15 @@ public class RandomMaker {
      *
      * */
 
+    public static String tossCoin() {
+        int num=(int)(Math.random()*2+1);
+        String str="";
+        if(num==1) {
+            str="앞면";
+        }
+        else {
+            str="뒷면";
+        }
+        return str;
+    }
 }
