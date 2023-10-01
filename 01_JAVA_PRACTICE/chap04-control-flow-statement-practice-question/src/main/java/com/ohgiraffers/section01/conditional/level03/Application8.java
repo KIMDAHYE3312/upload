@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.conditional.level03;
 
+import java.util.Scanner;
+
 public class Application8 {
 
     public static void main(String[] args) {
@@ -11,6 +13,20 @@ public class Application8 {
             정수를 하나 입력하세요 : 8
             1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 = 36
 	    */
-
+        Scanner sc=new Scanner(System.in);
+        System.out.print("정수를 하나 입력하세요 : ");
+        int num=sc.nextInt();
+        int sum=0;
+        String str="";
+        for(int i=1;i<=num;i++) {
+            if(i==num) {
+                str+=i;
+            }
+            else {
+                str += i + " + ";
+            }
+            sum+=i;
+        }
+        System.out.println(str+" = "+sum);
     }
 }
